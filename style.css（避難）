@@ -1,0 +1,830 @@
+@charset "UTF-8";
+/*
+Theme Name: Find Ochanomizu.
+Theme URI: https://find-ochanomizu.com
+Description: Find! Ochanomizuオリジナルテーマ
+Author: Digital Hollywood Co.,Ltd. 
+Author URI: http://www.dhw.co.jp/
+Version: 1.0.0
+
+Style List *
+ *  1.Common
+ *  2.Home
+ *  3.Other
+ *  4.Responsive-SP max-767px
+ *  5.Iinview animate css
+*/
+/* 1.Common */
+/* line 26, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+html {
+  font-size: 16px;
+  font-family: "Rounded Mplus 1c", Sans-Serif;
+  color: #000; }
+
+/* line 32, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+body {
+  font-family: "Rounded Mplus 1c", Sans-Serif; }
+
+/* line 36, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* line 113, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+body {
+  line-height: 1; }
+
+/* line 117, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block; }
+
+/* line 132, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+nav ul {
+  list-style: none; }
+
+/* line 136, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 142, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 150, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 157, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Rounded Mplus 1c", Sans-Serif;
+  vertical-align: text-top;
+  background: transparent;
+  color: #0F5499;
+  text-decoration: none; }
+
+/* line 168, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* line 174, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+mark {
+  background-color: rgba(98, 199, 219, 0.22);
+  color: #000;
+  font-style: normal;
+  font-weight: normal; }
+
+/* line 181, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 185, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* line 191, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 196, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 205, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+input,
+select {
+  vertical-align: middle; }
+
+/* line 210, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5; }
+
+/* line 219, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+p {
+  color: #000;
+  text-align: left;
+  white-space: normal;
+  word-wrap: normal;
+  line-height: 1.75; }
+  /* line 225, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  p b {
+    background-color: rgba(0, 183, 238, 0.2);
+    font-weight: 400; }
+
+/* line 231, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; }
+
+/* line 238, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+a {
+  opacity: 1;
+  vertical-align: bottom;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1.5; }
+  /* line 247, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  a:hover, a:active {
+    opacity: 0.6;
+    text-decoration: none; }
+
+/* line 254, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.wp-caption {
+  max-width: 100% !important; }
+
+/* line 259, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.cf:before {
+  content: "";
+  display: table; }
+
+/* line 263, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 270, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+em {
+  color: #000; }
+
+/* line 274, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+sub {
+  bottom: 0;
+  font-size: 0.65rem; }
+
+/* line 279, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.wrap {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box; }
+
+/* line 285, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.full {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; }
+
+/* line 291, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.pc {
+  display: none; }
+
+/* line 295, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.sp {
+  display: initial; }
+
+/*  2.Home */
+/* line 300, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  box-sizing: border-box; }
+
+/* line 308, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+header.bg {
+  background-image: url(img/filter.png);
+  background-repeat: repeat;
+  background-position: left top; }
+
+/* line 313, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.site-header {
+  padding: 1rem 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between; }
+
+/* line 318, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.site-header .logo {
+  height: 60px;
+  width: auto;
+  display: inline-block;
+  margin-top: -0.25rem; }
+
+/* line 324, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.gnav {
+  display: inline-block; }
+  /* line 326, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav li {
+    display: inline-block;
+    margin: 0 1rem; }
+  /* line 330, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav a {
+    color: #fff;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    width: 3rem;
+    text-align: center; }
+  /* line 337, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.25rem; }
+
+/* line 343, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.search-box {
+  position: relative;
+  width: 236px; }
+
+/* line 347, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.btn-search {
+  width: 24px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem; }
+
+/* line 353, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.search-field {
+  width: 236px;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #efefef;
+  font-size: 1rem; }
+
+/* line 363, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: inherit !important; }
+
+/* line 366, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.mainvisual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/kandamyojin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 4.5rem; }
+  /* line 377, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual:before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: url(img/filter.png) left top;
+    z-index: 9; }
+  /* line 385, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual .copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 75%; }
+  /* line 393, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual h1 {
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center; }
+  /* line 399, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual p {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5vw; }
+
+/* line 405, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+section {
+  padding: 0 1.5rem 4.5rem;
+  box-sizing: border-box; }
+  /* line 408, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  section h2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.5rem; }
+
+/* line 414, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.col2-wrap,
+.col3-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+/* line 420, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.latest-article {
+  width: 50%; }
+
+/* line 423, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.news {
+  width: 50%; }
+  /* line 425, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .news ul {
+    border-style: solid;
+    border-width: 32px 27px 27px;
+    -moz-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    -webkit-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    -o-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    border-image: url(img/bg-news.png) 32 27 27 fill repeat;
+    list-style: none;
+    padding: 1rem;
+    max-height: 295px;
+    overflow-y: scroll; }
+  /* line 437, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .news li {
+    margin-bottom: 1rem; }
+  /* line 440, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .news .date {
+    display: block;
+    font-size: 0.9375rem;
+    color: #666666;
+    margin-bottom: 0.25rem; }
+  /* line 446, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .news a {
+    color: #000;
+    border-bottom: 1px solid #000; }
+
+/* line 453, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.latest-article article,
+.recommended article {
+  position: relative; }
+  /* line 455, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .latest-article article h3,
+  .recommended article h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); }
+  /* line 465, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .latest-article article .category,
+  .recommended article .category {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 99999;
+    transform: translate(-50%, 0);
+    background-image: url(img/bg-category.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    color: #fff;
+    padding: 0.75rem 1rem 1.25rem;
+    min-height: 3rem;
+    min-width: 130px;
+    text-align: center;
+    font-size: 1.25rem; }
+  /* line 482, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .latest-article article:before,
+  .recommended article:before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: url(img/filter.png) left top;
+    z-index: 9999; }
+
+/* line 492, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.recommended {
+  clear: both; }
+  /* line 494, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended .article-wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  /* line 499, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended a {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 1rem; }
+  /* line 505, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended article h3 {
+    font-size: 1.5vw; }
+
+/* line 510, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.sidebar {
+  padding: 0 1.5rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden; }
+
+/* line 515, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.category-list {
+  list-style: none;
+  width: 65%;
+  float: left;
+  box-sizing: border-box; }
+  /* line 520, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list li {
+    display: inline-block; }
+  /* line 523, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list a {
+    display: inline-block;
+    background-color: #838b0d;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 4.5rem;
+    margin: 0 0.75rem 1.5rem;
+    box-sizing: border-box;
+    width: 12.5rem;
+    text-align: center; }
+
+/* line 536, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.side-right-wrap {
+  width: 35%;
+  float: right;
+  padding: 0 1.5rem;
+  box-sizing: border-box; }
+
+/* line 543, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.widget_archive select {
+  width: 236px;
+  max-width: 100%;
+  padding: 0.5rem;
+  -webkit-appearance: none;
+  border: 1px solid #efefef;
+  background-color: #fff;
+  font-size: 1rem;
+  border-radius: 0;
+  margin-bottom: 1.5rem; }
+
+/* line 555, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.site-footer {
+  clear: both;
+  background-color: #000;
+  position: relative;
+  padding: 1.5rem; }
+  /* line 560, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer a, .site-footer small {
+    color: #fff; }
+  /* line 563, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer small {
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    font-weight: 100; }
+  /* line 569, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer li {
+    display: inline-block;
+    margin-right: 1.5rem; }
+  /* line 573, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer .logo {
+    height: 60px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    z-index: 10; }
+    /* line 579, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+    .site-footer .logo img {
+      vertical-align: bottom;
+      max-width: 10vw;
+      max-height: 100%;
+      height: auto; }
+
+/* line 587, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.fnav {
+  width: 45%; }
+
+/* line 590, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.pagetop {
+  width: 4rem;
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1; }
+
+/*  3.Other */
+/* line 600, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.post p {
+  margin-bottom: 1.25rem;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 606, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.form {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 610, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .form p {
+    margin-bottom: 1.25rem; }
+  /* line 614, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .form form p {
+    margin-bottom: 0; }
+
+/* line 619, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.wpcf7-form-control {
+  margin-bottom: 1.5rem;
+  border: 3px solid #b5b5b5;
+  padding: 0.5rem;
+  width: 96%; }
+
+/* line 625, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.wpcf7-form-control.wpcf7-submit {
+  border: 1px solid #dcdcdc;
+  background-color: #6e7955;
+  padding: 0.75rem 5rem;
+  font-size: 1.25rem;
+  color: #fff;
+  border-radius: 8px;
+  width: auto;
+  cursor: pointer; }
+
+/*  4.Responsive */
+@media screen and (max-width: 1000px) {
+  /* line 637, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual h1 {
+    font-size: 2.5rem; }
+  /* line 640, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual p {
+    font-size: 1rem; }
+  /* line 643, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended a {
+    width: 48%;
+    margin: 1%; }
+  /* line 647, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended article h3 {
+    font-size: 1rem; }
+  /* line 650, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual {
+    background-attachment: scroll; } }
+
+@media screen and (max-width: 767px) {
+  /* line 655, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  header .search-box {
+    display: none; }
+  /* line 658, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-header .logo {
+    height: auto;
+    width: 110px; }
+  /* line 662, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav li {
+    margin: 0 1rem; }
+  /* line 665, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav a {
+    font-size: 0.75rem; }
+  /* line 668, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav i {
+    font-size: 2rem; }
+  /* line 671, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual .copy {
+    width: 75%; }
+  /* line 674, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual h1 {
+    font-size: 5.5vw; }
+  /* line 677, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  section h2 {
+    font-size: 1.25rem; }
+  /* line 680, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list {
+    width: 50%; }
+  /* line 683, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .side-right-wrap {
+    width: 50%; }
+  /* line 686, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .search-box,
+  .search-field {
+    max-width: 100%; } }
+
+@media screen and (max-width: 530px) {
+  /* line 692, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  header .search-box {
+    display: none; }
+  /* line 695, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-header .logo {
+    height: auto;
+    width: 24vw; }
+  /* line 699, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav li {
+    margin: 2px; }
+  /* line 702, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav a {
+    font-size: 3vw; }
+  /* line 705, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .gnav i {
+    font-size: 6vw; }
+  /* line 708, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .mainvisual p {
+    font-size: 0.825rem; }
+  /* line 711, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .latest-article,
+  .news {
+    width: 100%; }
+  /* line 715, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .news ul {
+    margin-top: -1rem; }
+  /* line 718, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  section h2 {
+    margin-bottom: 2rem; }
+  /* line 721, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended a {
+    width: 100%;
+    margin-bottom: 1rem; }
+  /* line 725, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .recommended article h3 {
+    font-size: 1rem; }
+  /* line 728, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list {
+    width: 100%;
+    float: none;
+    margin-bottom: 2rem; }
+  /* line 733, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .side-right-wrap {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 2rem; }
+  /* line 739, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list {
+    text-align: center; }
+  /* line 742, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .category-list a {
+    width: 15rem; }
+  /* line 745, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .search-box {
+    width: 15rem;
+    display: inline-block; }
+  /* line 749, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .fnav {
+    width: 100%;
+    margin-bottom: 1rem; }
+  /* line 753, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer .logo img {
+    max-width: 15vw; }
+  /* line 756, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+  .site-footer small {
+    font-size: 0.725rem;
+    line-height: 1.5; } }
+
+/*  5.Iinview animate css */
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+/* line 770, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.animated {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/* line 806, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/* line 831, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+/*  6.Googlemap API for JS */
+/* line 837, /Users/kaeruma/Documents/書類 - maki - MacBook Pro 13/git/find_ochanomizu/style.scss */
+#map {
+  height: 100%;
+  min-height: 500px; }
+
+/*# sourceMappingURL=style.css.map */

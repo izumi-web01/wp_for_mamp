@@ -1,0 +1,807 @@
+@charset "utf-8";
+/*
+Theme Name: Find Ochanomizu.
+Theme URI: https://find-ochanomizu.com
+Description: Find! Ochanomizuオリジナルテーマ
+Author: Digital Hollywood Co.,Ltd. 
+Author URI: http://www.dhw.co.jp/
+Version: 1.0.0
+
+Style List *
+ *  1.Common
+ *  2.Home
+ *  3.Other
+ *  4.Responsive-SP max-767px
+ *  5.Iinview animate css
+*/
+
+/* 1.Common */
+
+$main_width: 1000px;
+$base_font: "Rounded Mplus 1c", Sans-Serif;
+$base_font_color: #000;
+$base_link_color: #0F5499;
+$base_link_color_hover: #6B8299;
+
+html {
+  font-size: 16px;
+  font-family: $base_font;
+  color: $base_font_color;
+}
+
+body {
+  font-family: $base_font;
+}
+
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main{
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: $base_font;
+  vertical-align: text-top;
+  background: transparent;
+  color: $base_link_color;
+  text-decoration: none;
+}
+
+ins {
+  background-color: #ff9;
+  color: $base_font_color;
+  text-decoration: none;
+}
+
+mark {
+  background-color: rgba(98, 199, 219, 0.22);
+  color: $base_font_color;
+  font-style: normal;
+  font-weight: normal;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+}
+
+p {
+  color: $base_font_color;
+  text-align: left;
+  white-space: normal;
+  word-wrap: normal;
+  line-height: 1.75;
+  b {
+    background-color: rgba(0, 183, 238, 0.2);
+    font-weight: 400;
+  }
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+a {
+  opacity: 1;
+  vertical-align: bottom;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 1.5;
+  &:hover,
+  &:active {
+    opacity: 0.6;
+    text-decoration: none;
+  }
+}
+
+.wp-caption {
+  max-width: 100% !important;
+}
+
+.cf {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+em {
+  color: #000;
+}
+
+sub {
+  bottom: 0;
+  font-size: 0.65rem;
+}
+
+.wrap {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.full {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.pc {
+  display: none;
+}
+
+.sp {
+  display: initial;
+}
+
+/*  2.Home */
+header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  box-sizing: border-box;
+}
+header.bg{
+  background-image: url(img/filter.png);
+  background-repeat: repeat;
+  background-position: left top;
+}
+.site-header{
+  padding: 1rem 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.site-header .logo{
+  height: 60px;
+  width: auto;
+  display: inline-block;
+  margin-top: -0.25rem;
+}
+.gnav{
+  display: inline-block;
+  li{
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  a{
+    color: #fff;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    width: 3rem;
+    text-align: center;
+  }
+  i{
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
+.search-box{
+  position: relative;
+  width: 236px;
+}
+.btn-search{
+  width: 24px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.75rem;
+}
+.search-field{
+  width: 236px;
+  max-width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  -webkit-appearance:none;
+  border: none;
+  background-color: #efefef;
+  font-size: 1rem;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: inherit!important;
+}
+.mainvisual{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/kandamyojin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  margin-bottom: 4.5rem;
+  &:before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: url(img/filter.png) left top;
+    z-index: 9;
+  }
+  .copy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 75%;
+  }
+  h1{
+    font-size: 3.5vw;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5vw;
+  }
+}
+section{
+  padding: 0 1.5rem 4.5rem;
+  box-sizing: border-box;
+  h2{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.col2-wrap,
+.col3-wrap{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.latest-article{
+  width: 50%;
+}
+.news{
+  width: 50%;
+  ul{
+    border-style: solid;
+    border-width: 32px 27px 27px;
+    -moz-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    -webkit-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    -o-border-image: url(img/bg-news.png) 32 27 27 repeat;
+    border-image: url(img/bg-news.png) 32 27 27 fill repeat;
+    list-style: none;
+    padding: 1rem;
+    max-height: 295px;
+    overflow-y: scroll;
+  }
+  li{
+    margin-bottom: 1rem;
+  }
+  .date{
+    display: block;
+    font-size: 0.9375rem;
+    color: #666666;
+    margin-bottom: 0.25rem;
+  }
+  a{
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+}
+.latest-article,
+.recommended{
+  article{
+    position: relative;
+    h3{
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      z-index: 99999;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 1.5rem;
+      text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    }
+    .category{
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 99999;
+      transform: translate(-50%, 0);
+      background-image: url(img/bg-category.png);
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      color: #fff;
+      padding: 0.75rem 1rem 1.25rem;
+      min-height: 3rem;
+      min-width: 130px;
+      text-align: center;
+      font-size: 1.25rem;
+    }
+    &:before{
+      position: absolute;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      background: url(img/filter.png) left top;
+      z-index: 9999;
+    }
+  }
+}
+.recommended{
+  clear: both;
+  .article-wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  a{
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 1rem;
+  }
+  article{
+    h3{
+      font-size: 1.5vw;
+    }
+  }
+}
+.sidebar{
+  padding: 0 1.5rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+.category-list{
+  list-style: none;
+  width: 65%;
+  float: left;
+  box-sizing: border-box;
+  li{
+    display: inline-block;
+  }
+  a{
+    display: inline-block;
+    background-color: #838b0d;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 0.5rem;
+    padding: 0.75rem 4.5rem;
+    margin: 0 0.75rem 1.5rem;
+    box-sizing: border-box;
+    width: 12.5rem;
+    text-align: center;
+  }
+}
+.side-right-wrap{
+  width: 35%;
+  float: right;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.widget_archive{
+  select{
+    width: 236px;
+    max-width: 100%;
+    padding: 0.5rem;
+    -webkit-appearance: none;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+.site-footer{
+  clear: both;
+  background-color: #000;
+  position: relative;
+  padding: 1.5rem;
+  a,small{
+    color: #fff;
+  }
+  small{
+    font-size: 0.875rem;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+  }
+  li{
+    display: inline-block;
+    margin-right: 1.5rem;
+  }
+  .logo{
+    height: 60px;
+    width: auto;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    img{
+      vertical-align: bottom;
+      max-width: 10vw;
+      max-height: 100%;
+      height: auto;
+    }
+  }
+}
+.fnav{
+  width: 45%;
+}
+.pagetop{
+  width: 4rem;
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/*  3.Other */
+.post p{
+  margin-bottom: 1.25rem;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form{
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  p{
+    margin-bottom: 1.25rem;
+  }
+  form{
+    p{
+      margin-bottom: 0;
+    }
+  }
+}
+.wpcf7-form-control{
+  margin-bottom: 1.5rem;
+  border: 3px solid #b5b5b5;
+  padding: 0.5rem;
+  width: 96%;
+}
+.wpcf7-form-control.wpcf7-submit{
+  border: 1px solid #dcdcdc;
+  background-color: #6e7955;
+  padding: 0.75rem 5rem;
+  font-size: 1.25rem;
+  color: #fff;
+  border-radius: 8px;
+  width: auto;
+  cursor: pointer;
+}
+/*  4.Responsive */
+@media screen and (max-width: 1000px) {
+  .mainvisual h1 {
+    font-size: 2.5rem;
+  }
+  .mainvisual p {
+    font-size: 1rem;
+  }
+  .recommended a {
+    width: 48%;
+    margin: 1%;
+  }
+  .recommended article h3 {
+      font-size: 1rem;
+  }
+  .mainvisual{
+    background-attachment: scroll;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .search-box{
+    display: none;
+  }
+  .site-header .logo {
+    height: auto;
+    width: 110px;
+  }
+  .gnav li {
+    margin: 0 1rem;
+  }
+  .gnav a {
+    font-size: 0.75rem;
+  }
+  .gnav i {
+    font-size: 2rem;
+  }
+  .mainvisual .copy{
+    width: 75%;
+  }
+  .mainvisual h1 {
+    font-size: 5.5vw;
+  }
+  section h2 {
+    font-size: 1.25rem;
+  }
+  .category-list {
+    width: 50%;
+  }
+  .side-right-wrap{
+    width: 50%;
+  }
+  .search-box,
+  .search-field{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  header .search-box{
+    display: none;
+  }
+  .site-header .logo {
+    height: auto;
+    width: 24vw;
+  }
+  .gnav li {
+    margin: 2px;
+  }
+  .gnav a {
+    font-size: 3vw;
+  }
+  .gnav i {
+    font-size: 6vw;
+  }
+  .mainvisual p {
+    font-size: 0.825rem;
+  }
+  .latest-article,
+  .news{
+      width: 100%;
+  }
+  .news ul{
+    margin-top: -1rem;
+  }
+  section h2 {
+    margin-bottom: 2rem;
+  }
+  .recommended a {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .recommended article h3 {
+    font-size: 1rem;
+  }
+  .category-list {
+    width: 100%;
+    float: none;
+    margin-bottom: 2rem;
+  }
+  .side-right-wrap {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .category-list{
+    text-align: center;
+  }
+  .category-list a{
+    width: 15rem;
+  }
+  .search-box{
+    width: 15rem;
+    display: inline-block;
+  }
+  .fnav{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .site-footer .logo img{
+    max-width: 15vw;
+  }
+  .site-footer small{
+    font-size: 0.725rem;
+    line-height: 1.5;
+  }
+}
+
+/*  5.Iinview animate css */
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+.animated {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/*  6.Googlemap API for JS */
+#map{
+  height: 100%;
+  min-height: 500px;
+}
