@@ -641,20 +641,16 @@ section h2 {
   .mainvisual h1 {
     font-size: 2.5rem;
   }
-
   .mainvisual p {
     font-size: 1rem;
   }
-
   .recommended a {
     width: 48%;
     margin: 1%;
   }
-
   .recommended article h3 {
     font-size: 1rem;
   }
-
   .mainvisual {
     background-attachment: scroll;
   }
@@ -663,44 +659,34 @@ section h2 {
   header .search-box {
     display: none;
   }
-
   .site-header .logo {
     height: auto;
     width: 110px;
   }
-
   .gnav li {
     margin: 0 1rem;
   }
-
   .gnav a {
     font-size: 0.75rem;
   }
-
   .gnav i {
     font-size: 2rem;
   }
-
   .mainvisual .copy {
     width: 75%;
   }
-
   .mainvisual h1 {
     font-size: 5.5vw;
   }
-
   section h2 {
     font-size: 1.25rem;
   }
-
   .category-list {
     width: 50%;
   }
-
   .side-right-wrap {
     width: 50%;
   }
-
   .search-box,
 .search-field {
     max-width: 100%;
@@ -710,85 +696,67 @@ section h2 {
   header .search-box {
     display: none;
   }
-
   .site-header .logo {
     height: auto;
     width: 24vw;
   }
-
   .gnav li {
     margin: 2px;
   }
-
   .gnav a {
     font-size: 3vw;
   }
-
   .gnav i {
     font-size: 6vw;
   }
-
   .mainvisual p {
     font-size: 0.825rem;
   }
-
   .latest-article,
 .news {
     width: 100%;
   }
-
   .news ul {
     margin-top: -1rem;
   }
-
   section h2 {
     margin-bottom: 2rem;
   }
-
   .recommended a {
     width: 100%;
     margin-bottom: 1rem;
   }
-
   .recommended article h3 {
     font-size: 1rem;
   }
-
   .category-list {
     width: 100%;
     float: none;
     margin-bottom: 2rem;
   }
-
   .side-right-wrap {
     width: 100%;
     float: none;
     text-align: center;
     margin-bottom: 2rem;
   }
-
   .category-list {
     text-align: center;
   }
-
   .category-list a {
     width: 15rem;
   }
-
   .search-box {
     width: 15rem;
     display: inline-block;
   }
-
   .fnav {
     width: 100%;
     margin-bottom: 1rem;
   }
-
   .site-footer .logo img {
     max-width: 15vw;
   }
-
   .site-footer small {
     font-size: 0.725rem;
     line-height: 1.5;
@@ -835,4 +803,43 @@ section h2 {
 #map {
   height: 100%;
   min-height: 500px;
+}
+
+.feature {
+  padding: 1.5em;
+  border-bottom: 2px solid #000;
+}
+.feature figure {
+  height: 100px;
+  width: 100%;
+}
+.feature figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.feature__contents {
+  padding: 1em;
+  border: 2px solid #efefef;
+}
+.feature__contents .eyecatch {
+  display: flex;
+  justify-content: flex-start;
+}
+.feature__contents .eyecatch .logo {
+  width: 150px;
+}
+.feature__contents .eyecatch .logo img {
+  width: 100%;
+  height: auto;
+}
+.feature__contents .title {
+  font-size: 2.2rem;
+  color: blue;
+  margin-bottom: 1em;
+  margin-left: 2px;
+}
+.feature__contents .detail {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */
