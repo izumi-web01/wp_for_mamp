@@ -830,10 +830,15 @@ section{
   &__contents{
     padding: 1em;
     border:2px solid #efefef;
+    &__title{
+      font-size: 2.6rem;
+      font-weight: bold;
+    }
     
     .eyecatch{
       display: flex;
       justify-content: flex-start;
+      align-items: center;
       .logo{
         width: 150px;
         img{
@@ -842,13 +847,13 @@ section{
         }
       }
     }
-    .title{
+    &__title{
       font-size: 2.2rem;
       color:blue;
       margin-bottom: 1em;
       margin-left: 2px;
     }
-    .detail{
+    &__detail{
       font-size: 1.8rem;
       margin-bottom: 1em;
     }

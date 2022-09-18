@@ -822,9 +822,14 @@ section h2 {
   padding: 1em;
   border: 2px solid #efefef;
 }
+.feature__contents__title {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
 .feature__contents .eyecatch {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .feature__contents .eyecatch .logo {
   width: 150px;
@@ -833,13 +838,13 @@ section h2 {
   width: 100%;
   height: auto;
 }
-.feature__contents .title {
+.feature__contents__title {
   font-size: 2.2rem;
   color: blue;
   margin-bottom: 1em;
   margin-left: 2px;
 }
-.feature__contents .detail {
+.feature__contents__detail {
   font-size: 1.8rem;
   margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */
