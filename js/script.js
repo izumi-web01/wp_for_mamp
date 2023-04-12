@@ -28,4 +28,13 @@ $(function(){
   $('#pagetop').click(function() {
       $("html,body").animate({scrollTop:0},"300");
   });
+
+
+//tableの書き換え
+const baby = ['ぷーちゃん','みーちゃん'] ; 
+for(let item of baby){
+  let tr = `<tr><th>${item}</th></tr>`;
+  document.getElementById('cats').insertAdjacentHTML('afterbegin',tr)
+  
+};
 });

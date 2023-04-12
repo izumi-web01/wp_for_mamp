@@ -859,3 +859,12 @@ section{
     }
   }
 }
+
+.service{
+  &-all{
+    &__list{
+      padding: 1em;
+      border:2px solid #000;
+    }
+  }
+}

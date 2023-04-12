@@ -847,4 +847,9 @@ section h2 {
 .feature__contents__detail {
   font-size: 1.8rem;
   margin-bottom: 1em;
+}
+
+.service-all__list {
+  padding: 1em;
+  border: 2px solid #000;
 }/*# sourceMappingURL=style.css.map */

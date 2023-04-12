@@ -7,6 +7,7 @@
     </div>
     <section class="recommended">
       <h2>御茶ノ水を「<?php single_term_title(); ?>」</h2>
+      これはcategory.phpです
       <div class="article-wrap">
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
         <a href="<?php the_permalink(); ?>">
